@@ -1,0 +1,139 @@
+%basicDesign
+    border-radius: 3px
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.5)
+    background-color: white
+    width: fit-content
+
+#filter-container
+    display: inline-flex
+    flex-direction: row
+    position: fixed
+    top: 84px
+    margin-left: 10px
+    width: 100%
+    //border: 1px solid black
+    //border-radius: 3px
+    //box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.5)
+    user-select: none
+    transition: width 200ms
+    font-size: 0.9em
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    #show-stats
+        display: none
+        min-height: fit-content
+        border-radius: 3px
+        border: 0
+
+    #show-stats:hover
+        cursor: pointer
+        box-shadow: 0 2px 3px 1px rgba(0,0,0,0.2)
+    
+
+    span
+        display: inline
+        text-align: center
+        vertical-align: middle
+        margin-left: 5px
+    
+    #filterHeading
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+        display: inline
+    
+    #filters
+        display: none
+        flex-direction: column
+        @extend %basicDesign
+        padding: 10px
+        margin: 10px
+
+        p
+            margin: 5px 0px
+            padding: 0
+
+        input[type="radio"]:hover, label:hover
+            cursor: pointer
+            color: rgb(0, 120, 215)
+
+        button
+            display: inline-block
+            border-radius: 3px
+            padding: 2px 15px
+            font-size: 1em
+            margin-top: 5px
+            border: 1px solid rgb(240, 240, 240)
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5)
+        
+        button:hover
+            cursor: pointer
+            border: 1px solid darkgray
+            
+    #city-filter
+        display: none
+        flex-direction: column
+        @extend %basicDesign
+        padding: 10px
+        margin: 10px
+
+        p
+            margin: 5px 0px
+            padding: 0
+
+        input[type="radio"]:hover, label:hover
+            cursor: pointer
+            color: rgb(0, 120, 215)
+
+        button
+            display: inline-block
+            border-radius: 3px
+            padding: 2px 15px
+            font-size: 1em
+            margin-top: 5px
+            border: 1px solid rgb(240, 240, 240)
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5)
+        
+        button:hover
+            cursor: pointer
+            border: 1px solid darkgray
+
+#stat-container
+    display: inline-block
+    position: fixed
+    top: 50%
+    left: 25%
+    transform: translateX(-100%)
+    transform: translateY(-50%)
+    width: fit-content
+    height: fit-content
+    background-color: white
+    //border-radius: 10px
+    box-shadow: 0 0 10px 5000px rgba(0,0,0,0.7)
+    //padding: 10px
+    //text-align: center
+    z-index: 1
+
+    div.graph
+        //margin: 10px
+        //border: 1px solid black
+        //min-height: 50%
+        display: inline-block
+        //width: 40%
+
+    #close-stats
+        display: none
+        position: relative
+        font-size: 1.5em
+        border-radius: 50%
+        background-color: #cccccc
+        box-shadow: 0 0 2px 1px rgba(0,0,0,0.2)
+        user-select: none
+        height: 35px
+        width: 35px
+        line-height: 35px
+        margin: 10px
+        text-align: center
+    
+    #close-stats:hover
+        cursor: pointer
+        box-shadow: 0 0 2px 1px rgba(0,0,0,0.7)
+

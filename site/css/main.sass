@@ -1,0 +1,151 @@
+$focusColor: rgba(0, 115, 230, 0.4)
+$primaryColor: #b30000
+$secondaryColor: rgb(0, 120, 215)
+
+body 
+    margin: 0
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    background-image: url('../media/6.jpg')
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    overflow-y: scroll
+    //width: 100%
+    height: 100%
+
+div#mainBlock
+    width: 100%
+    position: absolute
+    top: 40%
+
+div#mainLogo
+    text-align: center
+    -moz-user-select: none
+    font-size: 3.5em
+    color: $secondaryColor
+    margin-bottom: 10px
+    //display: none
+
+#mainLogoSpan
+    color: white
+    background-color: $secondaryColor
+
+div#searchDiv
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    //margin-top: 10px
+    height: auto
+    text-align: center
+
+input#searchBox
+    border: 0
+    padding-left: 7px
+    box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4)
+    //background-color: black
+    height: 35px
+    width: 40%
+    border-radius: 3px
+
+input#searchBox:focus
+    box-shadow: 0 1px 3px 2px $focusColor
+
+#searchButton
+    height: 25px
+    display: inline-block
+    line-height: 25px
+    vertical-align: middle
+    border-radius: 3px
+    background-color: rgb(240, 240, 240)
+    font-size: 1em
+    user-select: none
+    -moz-user-select: none
+    margin-left: 10px
+    padding: 2px 8px
+    color: black
+
+#searchButton:hover
+    cursor: pointer
+    color: black
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3)
+    //border: 1px solid darkgrey
+
+#bufferBox
+    display: inline-block
+    margin-top: 10px
+    width: 100%
+    //border: 1px solid black
+
+
+//CSS FOR WHEN THE QUERY IS SEARCHED FOR
+div#mainBlockS
+    position: fixed
+    top: 10px
+    width: 100%
+    height: 35px
+    text-align: center
+    //-moz-transition-duration: 50ms
+    //transition-duration: 50ms
+    //border: 1px solid black
+
+div#mainLogoS
+    //transition-duration: 0.2s
+    display: none
+
+div#data-container
+    width: 45%
+    display: inline-flex
+    flex-direction: column
+    //border: 1px solid black
+    margin-top: -12px
+    p
+        margin-left: 10px
+
+div#data-container>a.data
+    display: none
+    background-color: white
+    user-select: none
+    //width: 45%
+    padding: 10px
+    margin: 10px
+    border-radius: 3px
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.5)
+    color: black
+    text-decoration: initial
+    overflow: hidden
+
+    h3
+        font-size: 0.9em
+        margin: 0
+    p
+        font-size: 0.8em
+        margin: 0
+
+    .tweet-heading
+        display: flex
+        flex-direction: rows
+        align-items: center
+
+    .profile-images
+        border-radius: 50%
+        height: 35px
+        width: 35px
+        margin-bottom: 5px
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5)
+    
+    .user-name
+        display: inline-block
+        font-size: 0.8em
+        font-weight: bold
+        margin-left: 10px
+
+div#data-container>a.data:hover
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.7)
+    color: $secondaryColor
+
+div#data-container>a.data:visited
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.7)
+    color: $secondaryColor
+    //cursor: pointer

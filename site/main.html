@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hZE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/mainFilter.css" />
+    <link rel="stylesheet" type="text/css" href="css/mainFooter.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div id="mainBlock">
+        <div id="mainLogo"><span id="mainLogoSpan">h</span>ZE</div>
+        <div id="searchDiv">
+            <input id="searchBox" type="text" placeholder="Enter Query" autofocus></input>
+            <div id="searchButton">Search</div>
+        </div>
+    </div>
+    <div id="bufferBox"></div>
+    <div id="data-container">
+    </div>
+    <div id="filter-container">
+        <div id="filters">
+            Filter by language: </br>
+            <p>
+                <input type="radio" id="en-radio" name="language" value="en" checked>
+                <label for="en-radio">English</label>
+            </p>
+            <p>
+                <input type="radio" id="fr-radio" name="language" value="fr">
+                <label for="fr-radio">French</label>
+            </p>
+            <p>
+                <input type="radio" id="hi-radio" name="language" value="hi">
+                <label for="hi-radio">Hindi</label>
+            </p>
+            <p>
+                <input type="radio" id="es-radio" name="language" value="es">
+                <label for="es-radio">Spanish</label>
+            </p>
+            <p>
+                <input type="radio" id="th-radio" name="language" value="th">
+                <label for="th-radio">Thai</label>
+            </p>
+            <button class="filter-button">Filter</button>
+        </div>
+        <div id="city-filter">
+            Filter by city: </br>
+            <p>
+                <input type="radio" id="dl-radio" name="city" value="delhi" checked>
+                <label for="dl-radio">New Delhi</label>
+            </p>
+            <p>
+                <input type="radio" id="ny-radio" name="city" value="nyc">
+                <label for="ny-radio">New York</label>
+            </p>
+            <p>
+                <input type="radio" id="mx-radio" name="city" value="mexico city">
+                <label for="mx-radio">Mexico City</label>
+            </p>
+            <p>
+                <input type="radio" id="bk-radio" name="city" value="bangkok">
+                <label for="bk-radio">Bangkok</label>
+            </p>
+            <p>
+                <input type="radio" id="pa-radio" name="city" value="paris">
+                <label for="pa-radio">Paris</label>
+            </p>
+            <button class="filter-button">Filter</button>
+        </div>
+        <button id="show-stats">Show Stats</button>
+    </div>
+    <div id="stat-container">
+        <!-- <div id="close-stats">X</div> -->
+        <div id="q-city-graph" class="graph"></div>
+        <div id="q-lang-graph" class="graph"></div> </br>
+        <div id="a-city-graph" class="graph"></div>
+        <div id="a-lang-graph" class="graph"></div>
+    </div>
+    <div id="footer"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

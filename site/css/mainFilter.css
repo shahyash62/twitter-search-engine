@@ -1,0 +1,181 @@
+#filter-container #filters, #filter-container #city-filter {
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#filter-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 84px;
+  margin-left: 10px;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: width 200ms;
+  transition: width 200ms;
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#filter-container #show-stats {
+  display: none;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  border-radius: 3px;
+  border: 0;
+}
+
+#filter-container #show-stats:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#filter-container span {
+  display: inline;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+#filter-container #filterHeading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline;
+}
+
+#filter-container #filters {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+#filter-container #filters p {
+  margin: 5px 0px;
+  padding: 0;
+}
+
+#filter-container #filters input[type="radio"]:hover, #filter-container #filters label:hover {
+  cursor: pointer;
+  color: #0078d7;
+}
+
+#filter-container #filters button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px 15px;
+  font-size: 1em;
+  margin-top: 5px;
+  border: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+#filter-container #filters button:hover {
+  cursor: pointer;
+  border: 1px solid darkgray;
+}
+
+#filter-container #city-filter {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+
+#filter-container #city-filter p {
+  margin: 5px 0px;
+  padding: 0;
+}
+
+#filter-container #city-filter input[type="radio"]:hover, #filter-container #city-filter label:hover {
+  cursor: pointer;
+  color: #0078d7;
+}
+
+#filter-container #city-filter button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 2px 15px;
+  font-size: 1em;
+  margin-top: 5px;
+  border: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+#filter-container #city-filter button:hover {
+  cursor: pointer;
+  border: 1px solid darkgray;
+}
+
+#stat-container {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 5000px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 10px 5000px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+#stat-container div.graph {
+  display: inline-block;
+}
+
+#stat-container #close-stats {
+  display: none;
+  position: relative;
+  font-size: 1.5em;
+  border-radius: 50%;
+  background-color: #cccccc;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  margin: 10px;
+  text-align: center;
+}
+
+#stat-container #close-stats:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=mainFilter.css.map */
